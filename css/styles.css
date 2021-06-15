@@ -3,8 +3,53 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
+  background-color: black;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
-h1 {
-	color:  darkred;
+nav {
+  height: 50px ;
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  background-color: grey;
+}
+
+.logo h1{
+  width: 40%;
+	color:  pink;
+  padding-right: 500px;
+  padding-left: 30px;
+  background-color: grey;
+}
+
+.menu {
+  width: 60%;
+  color: white;
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-around;
+  background-color: grey;
+}
+
+.menu a{
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  background-color: grey;
+}
+
+.menu a:hover {
+  color: pink;
+}
+
+.box {
+  margin: 40px ;
+  color: white;
+}
+
+.box p{
+  padding: 10px;
 }
