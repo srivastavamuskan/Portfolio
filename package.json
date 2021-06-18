@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfilio Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srivastavamuskan/Portfolio.git"
+  },
+  "author": "Muskan Srivastava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srivastavamuskan/Portfolio/issues"
+  },
+  "homepage": "https://github.com/srivastavamuskan/Portfolio#readme",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
