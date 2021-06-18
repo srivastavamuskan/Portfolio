@@ -4,10 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/css/styles.css">
+    <link rel="stylesheet" href="./scss/styles.css">
     <title>Welcome to my Portfolio</title>
 </head>
 <body>
-    <h1>Hello!</h1>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <div class="menu">
+            <div class="menu-branding">
+               <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about.html" class="nav-link">
+                        About Me
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/work.html" class="nav-link">
+                        My Work
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact.html" class="nav-link">
+                        Contact Me
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+
+    <main id="home">
+        <h1 class="lg-heading">
+            Muskan <span class="text-secondary">Srivastava</span>
+        </h1>
+        <h2 class="sm-heading">
+            Web Developer, Programmer & Designer
+        </h2>
+        <div class="icons">
+            <a href="https://www.snapchat.com/add/muskansrivasta6" target="_blank"><i
+                    class="fab fa-snapchat fa-2x"></i></a>
+            <a href="https://www.instagram.com/muskan_6srivastava/" target="_blank"><i
+                    class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://github.com/srivastavamuskan" target="_blank"><i
+                    class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/muskan-srivastava-539568200/" target="_blank"><i
+                    class="fab fa-linkedin-in fa-2x"></i></a>
+            </a>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 </body>
 </html>
