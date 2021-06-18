@@ -1,0 +1,26 @@
+//menu button
+.menu btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  @include easeOut;
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    @include easeOut;
+  }
+
+  // rotate into x with menu lines
+  //   &.close {
+  //    transform: rotate(180deg);
+
+  //     .btn-line {
+  //       //line 1 - rotate
+  //     }
+  //   }
+}
