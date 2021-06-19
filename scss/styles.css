@@ -257,7 +257,7 @@ main#home h1 {
   display: -ms-grid;
   display: grid;
   grid-gap: 30px;
-      grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+      grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
@@ -309,6 +309,86 @@ main#home h1 {
   text-align: center;
 }
 
+.projects {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0.7rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.projects p {
+  text-align: center;
+}
+
+.projects img {
+  width: 100%;
+  border: 3px #fff solid;
+}
+
+.projects img:hover {
+  opacity: 0.5;
+  border-color: #eece1a;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.boxes div {
+  font-size: 2rem;
+  border: 3px #fff solid;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.boxes div:hover {
+  padding: 0.5rem 1.5rem;
+  background: #eece1a;
+  color: #000;
+}
+
+.boxes div:hover span {
+  color: #000;
+}
+
+.btn, .btn-light, .btn-dark {
+  display: block;
+  padding: 0.5rem, 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+
+.btn:hover, .btn-light:hover, .btn-dark:hover {
+  background: #eece1a;
+  color: #000;
+}
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333;
+}
+
+.btn-dark {
+  background: black;
+  color: #fff;
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -319,6 +399,15 @@ main#home h1 {
 
 .education-name {
   text-align: center;
+}
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 30%;
+    height: 30%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -355,14 +444,18 @@ main#home h1 {
             transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
-    background: url("../assets/photo.jpg");
+    background: url("../assets/photosm.png");
     width: 150px;
     height: 150px;
   }
   .about-info {
-        grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+        grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .projects {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -370,6 +463,10 @@ main#home h1 {
   main#home h1 {
     margin-top: 10vh;
     font-size: 3.5rem;
+  }
+  .projects {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=styles.css.map */
