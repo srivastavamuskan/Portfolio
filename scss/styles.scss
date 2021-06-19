@@ -102,6 +102,7 @@ main {
   background: lighten($primary-color, 5);
   padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
+  text-align: center;
 }
 
 .job-2 {
@@ -109,6 +110,7 @@ main {
   background: lighten($primary-color, 5);
   padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
+  text-align: center;
 }
 
 .job-3 {
@@ -116,6 +118,7 @@ main {
   background: lighten($primary-color, 5);
   padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
+  text-align: center;
 }
 
 #main-footer {
@@ -124,6 +127,10 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+}
+
+.education-name {
+  text-align: center;
 }
 
 @import "mobile";
