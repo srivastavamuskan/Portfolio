@@ -257,7 +257,7 @@ main#home h1 {
   display: -ms-grid;
   display: grid;
   grid-gap: 30px;
-      grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+      grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
@@ -351,7 +351,7 @@ main#home h1 {
 .boxes div {
   font-size: 2rem;
   border: 3px #fff solid;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 1.5rem;
   margin-bottom: 3rem;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -365,10 +365,6 @@ main#home h1 {
 
 .boxes div:hover span {
   color: #000;
-}
-
-.boxes .email {
-  font-size: 1.5rem;
 }
 
 .btn, .btn-light, .btn-dark {
@@ -453,7 +449,7 @@ main#home h1 {
     height: 150px;
   }
   .about-info {
-        grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+        grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -471,6 +467,10 @@ main#home h1 {
   .projects {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .boxes div {
+    padding: 1rem 0.2rem;
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
