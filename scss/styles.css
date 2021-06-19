@@ -367,6 +367,10 @@ main#home h1 {
   color: #000;
 }
 
+.boxes .email {
+  font-size: 1.5rem;
+}
+
 .btn, .btn-light, .btn-dark {
   display: block;
   padding: 0.5rem, 1rem;
